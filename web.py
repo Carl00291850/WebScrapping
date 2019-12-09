@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 #request the data form the website
 page = requests.get('https://www.newegg.com/p/pl?Submit=StoreIM&Depa=1&Category=20&N=600000022%20600000280%2050001312%2050001314%2050001315%2050001944')
-#load data to  bs4 and put it into a variable where beutufullsoup can understand
+#load data to  bs4 and put it into an object and give  a variable where beutufullsoup can understand
 soup = BeautifulSoup(page.content, 'html.parser')
 #get the first item of the web page to start web scraping
 containers = soup.find_all('div',class_='item-container')
