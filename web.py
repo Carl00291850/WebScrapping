@@ -21,7 +21,7 @@ for container in containers:
     Price_container = container.find_all('li',class_='price-current')
     price_name = Price_container[0].text.strip('|\n')
 
-#print the items of thr wen page
+#print the items
     print(brand_title)
     print(Product_name)
     print(Shipping_name)
